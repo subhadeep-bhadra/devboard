@@ -25,7 +25,7 @@ jobs:
       # Install npm packages
       - name: Install npm packages
         working-directory: frontend  
-        run: npm run install
+        run: npm run Install
 
       # Run Linter
       - name: Run Linter
