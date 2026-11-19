@@ -44,3 +44,10 @@ jobs:
         with:
           username: ${{ vars.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Docker Build and Push
+        uses: docker/build-push-action@v7
+        with:
+        
+          push: true
+          tags: ${{ vars.DOCKER_USERNAME }}/devbord-er-man:latest
