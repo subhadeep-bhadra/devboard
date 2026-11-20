@@ -93,7 +93,11 @@ jobs:
         
           push: true
           tags: ${{ vars.DOCKER_USERNAME }}/devbord-er-mane:latest
-       
+
+  deploy:
+        needs: [frontend,backend]
+        uses: ./.github/workflows/cd.yml
+        secrets: inherit
      
 
 
