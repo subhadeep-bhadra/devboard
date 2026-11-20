@@ -9,7 +9,7 @@ on:
 jobs:
     diploy:
     # if: github.event.workflow_run.conclusion == 'success'
-     runs-on: ip-10-0-25-34
+     runs-on: self-hosted
      steps: 
      - name: Code Checkout
        uses: actions/checkout@v7
