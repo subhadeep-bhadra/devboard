@@ -95,9 +95,9 @@ jobs:
           tags: ${{ vars.DOCKER_USERNAME }}/devbord-er-mane:latest
 
   diploy:
-        needs: [frontend,backend]
-        uses: ./.github/workflows/cd.yml
-        secrets: inherit
+       needs: [frontend,backend]
+       uses: ./.github/workflows/cd.yml
+       secrets: inherit
      
 
 
