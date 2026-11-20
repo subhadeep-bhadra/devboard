@@ -1,5 +1,5 @@
 
-name: CI
+name: ci
 
 on:
   push:
@@ -70,7 +70,11 @@ jobs:
 
       - name: Run Go Formatter
         run: go fmt
+<<<<<<< HEAD
         working-directory: backend   
+=======
+        working-directory: backend  
+>>>>>>> 96ebe72 (cd.yml)
       - name: Run Go Vet
         run: go vet
         working-directory: backend    
