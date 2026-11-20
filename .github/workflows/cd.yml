@@ -8,12 +8,13 @@ on:
             - 'main'
 jobs:
     diploy:
+     if: github.event.workflow_run.conclusion == 'success'
      runs-on: ip-10-0-25-34``
      steps: 
      - name: Code Checkout
        uses: actions/checkout@v7
      - name: Copy Example Env to main Env
-       uses: cp.env.example .env
+       uses: cp .env.example .env
 
      - name: Docker Login
        uses: docker/login-action@v4
