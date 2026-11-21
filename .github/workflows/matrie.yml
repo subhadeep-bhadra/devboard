@@ -1,6 +1,11 @@
 name: Go Linter 
 on: 
-   workflow_dispatch:
+   push:
+    paths:
+        - '**'
+        - '!.github/workflows/ci.yml**'
+    branches: [main]
+  
 
 jobs:
   code-format:
