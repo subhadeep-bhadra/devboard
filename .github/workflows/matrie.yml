@@ -4,6 +4,7 @@ on:
    paths:
         - '**'
         - '!.github/workflows/**'
+   branches: [main]
   
 
 jobs:
