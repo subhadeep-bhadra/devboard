@@ -8,7 +8,7 @@ on:
      #       - 'main'
 jobs:
     diploy:
-     if: github.event.workflow_run.conclusion == 'success'
+    # if: github.event.workflow_run.conclusion == 'success'
      runs-on: [self-hosted, Linux, X64]
      steps: 
      - name: Code Checkout
