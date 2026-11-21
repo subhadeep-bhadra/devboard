@@ -72,7 +72,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-       Folder: ['frontend','backend']
+       Folder: ['Frontend','Backend']
 
     steps:
       # Checkout Code
