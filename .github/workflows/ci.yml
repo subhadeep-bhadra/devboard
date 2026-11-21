@@ -3,9 +3,7 @@ name: ci
 
 on:
   push:
-      paths:
-        - '**'
-        - '!.github/workflows/**'
+     
       branches: [main]
 
 jobs:
