@@ -3,7 +3,7 @@ on:
   push:
    paths:
         - '**'
-        - '.github/workflows/matrie.yml**'
+        - '!.github/workflows/ci.yml**'
    branches: [main]
   
 
