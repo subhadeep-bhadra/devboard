@@ -1,6 +1,10 @@
 name: Go Linter 
-on: 
-   workflow_dispatch:
+on:
+  push:
+   paths:
+        - '**'
+        - '!.github/workflows/**'
+  
 
 jobs:
   code-format:
